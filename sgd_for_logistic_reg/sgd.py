@@ -96,9 +96,9 @@ def sgd(f):
         yplot += [old_error]
 
     pyplot.plot(xplot, yplot)
-    pyplot.title("Stochastic Gradient Descent Learning Curve (alpha = 1/900, threshold = 0.0001)")
+    pyplot.title("Stochastic Gradient Descent Learning Curve (alpha = 1/(sizeof_dataset*.9), threshold = 0.0001)")
     pyplot.xlabel("Number of Iterations")
-    pyplot.ylabel("Sum Error on Validation Set (max error = 100)")
+    pyplot.ylabel("Sum Error on Validation Set (max error = sizeof_dataset/10)")
     pyplot.show()
 
     return w
