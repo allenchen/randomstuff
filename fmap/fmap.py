@@ -78,6 +78,10 @@ class fmap(dict):
 
         return map(lambda x: x[0], window)
 
+    # Returns the average frequency
+    def average(self):
+        return self.total/float(len(self.keys()))
+
     # Returns a copy of the fmap
     def copy(self):
         newfmap = fmap()
