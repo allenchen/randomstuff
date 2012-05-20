@@ -1,0 +1,6 @@
+a script to automate account creation for hon accounts (heroesofnewerth.com)
+
+it gets really annoying to register every time (it's like 10 clicks or something)
+just call register_account() with name as your desired account name, and it makes an account for you.
+returns True if it succeeds in creating the account (failure is usually because account name is taken)
+throws all kinds of unhandled exceptions if it fails
